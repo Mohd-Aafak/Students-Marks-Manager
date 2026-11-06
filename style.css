@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #433477;
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border: 1px solid #d6d0ee;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.12);
+}
+
+/* Add Student button */
+#add-std {
+    width: 100%;
+    padding: 12px;
+    background: #6c4ab6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add-std:hover {
+    background: #543494;
+    transform: translateY(-2px);
+}
+
+/* Student cards */
+.stdShow-container {
+    margin-top: 22px;
+}
+
+.stdShow-container > div {
+    background: #f3f0ff;
+    padding: 16px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid #e2dafb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Student details */
+.stdShow-container span {
+    color: #433477;
+    font-size: 14px;
+}
+
+/* All student buttons */
+.stdShow-container button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Delete button */
+.stdShow-container button:first-of-type {
+    background: #e05260;
+}
+
+.stdShow-container button:first-of-type:hover {
+    background: #c73545;
+}
+
+/* Edit button */
+.stdShow-container button:last-of-type {
+    background: #6c4ab6;
+}
+
+.stdShow-container button:last-of-type:hover {
+    background: #543494;
+}
+
+/* Student count and average */
+#std-value,
+#avg-value {
+    display: inline-block;
+    background: #f3f0ff;
+    color: #543494;
+    padding: 12px 16px;
+    margin: 0 8px 20px 0;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #e2dafb;
+}
+
+/* Mobile responsive design */
+@media (max-width: 480px) {
+    body {
+        padding: 14px;
+        align-items: flex-start;
+    }
+
+    .container {
+        padding: 20px 16px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    .stdShow-container > div {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .stdShow-container span {
+        font-size: 13px;
+    }
+
+    .stdShow-container button {
+        padding: 8px 10px;
+    }
+}
+.container > p {
+    display: inline-block;
+    background: #f3f0ff;
+    color: #543494;
+    padding: 12px 16px;
+    margin: 0 8px 20px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #e2dafb;
+}
+
+#std-value,
+#avg-value {
+    color: #764ba2;
+    font-weight: bold;
+}
